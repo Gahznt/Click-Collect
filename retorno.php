@@ -14,7 +14,7 @@ $id = $_POST['id'];
 if (confirmaRecebimento($conexao, $now, $id)) {  
 	header("location: painel_motorista.php");
 } else { 
-	?> <p class="text-danger"> Gaiolas não recebida!!</p>
+	?> <p class="text-danger"> Pedido não recebido!!</p>
 <?php } ?>
 
 <?php

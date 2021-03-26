@@ -21,7 +21,8 @@ session_start();
  $html .= '</tr>';
 
 		//Selecionar todos os itens da tabela 
-		$query = "SELECT * FROM despacho";
+		$dataloja = $_POST['loja'];
+		$query = "SELECT * FROM despacho WHERE loja ='".$dataloja."';";
 		$resultado_query = mysqli_query($conexao, $query);
 		
 		while($row_query = mysqli_fetch_assoc($resultado_query)){

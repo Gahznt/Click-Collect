@@ -4,19 +4,24 @@
  include 'conexao.php';
  include 'functions_gaiolas.php';?>
  
-<h1>Gaiolas despachadas</h1>
+<h1>Pedidos despachados</h1>
 <div class="container">
-	<form action="filtro_recebimento.php">
-		<input type="date" name="datafiltro">
+<p>
+	<form action="filtro_recebimento.php" method="POST">
+		<label>Data inicio</label>
+		<input type="date" name="datainicio">
+		<label>Data fim</label>
+		<input type="date" name="datafim">
 		<input class="btn btn-secondary" type="submit">
-		<a href="gerar_relatorio.php"  class="btn btn-success">Gerar relatorio Geral</a>
+		
 		<br><br>
 		</p>
 	</form>
+	</p>
 <table class="table table-striped table-bordered">
 	<tr>
 		<td align="center" class="text-primary">Pedido</td>
-		<td align="center"class="text-primary">Data do recebimento do FAST</td>
+		<td align="center"class="text-primary">Data de recebimento do FAST</td>
 	</tr>
 	
 	<?php 

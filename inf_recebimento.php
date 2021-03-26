@@ -10,7 +10,7 @@ date_default_timezone_set('America/Sao_Paulo');
 
 
 $pedido = $_POST['pedidos'];
-$newNow = date('Y/m/d');
+$newNow = date('Y/m/d H:i:s');
 $arrayPedido = preg_split('/\s+/', trim($pedido));
 
 

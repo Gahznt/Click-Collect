@@ -1,7 +1,6 @@
 <?php 
 include 'verifica_login.php';
 include 'cabecalhosite.php';
-
 ?>
 
 </head>
@@ -226,11 +225,12 @@ include 'cabecalhosite.php';
 		</select>
 		</p>
 		<label>Pedidos:</label>
-		<textarea name="pedidos" required="yes"></textarea><br><br>
-		<br>
-		<br>
+		<p>
+		<textarea name="pedidos" required="yes"></textarea>
+		</p>
 		<input class="btn btn-outline-success" type="submit" name="Cadastrar">
 </form>
+<img src="click-collect.png" width="709px" height="335px" style="background-color: #F8F9FA; border-radius: 25px;">
 	</div>
 </html>
 <?php include 'rodape.php' ?>

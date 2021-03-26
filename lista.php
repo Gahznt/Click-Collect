@@ -5,6 +5,9 @@
  include 'functions_gaiolas.php';?>
  
 <h1>Pedidos despachados</h1>
+<p class="lead alert-primary">
+Consultar pedidos que foram embarcados para as lojas.
+</p>
 <div class="container">
 	<form action="filtro.php">
 	<br><p>Filtrar loja: <select name="loja" required="yes">
@@ -220,39 +223,10 @@
 		<option value=" 274">CE274</option>
 		<option value=" 1014">BY-14</option>
 		</select>
-		<input class="btn btn-secondary" type="submit" name="filtrar">
-		<a href="gerar_relatorio_completo.php" class="btn btn-success">Baixar relatorio completo</a>
+		<input class="btn-primary" type="submit" name="filtrar" value="Filtrar">
 		<br><br>
 		</p>
 	</form>
-<table class="table table-striped table-bordered">
-	<tr>
-		<td align="center" class="text-primary">Gaiola</td>
-		<td align="center"class="text-primary">Loja</td>
-		<td align="center"class="text-primary">Data do Envio</td>
-		<td align="center"class="text-primary">Recebimento Loja</td>
-	</tr>
-	
-	<?php 
-	$resultado = mysqli_query ($conexao, 'SELECT * FROM despacho');
-	while ($dados = $resultado->fetch_array()) { ?>
-
-		<tr>
-			<td align="center" ><?php echo $dados['gaiolas'] ?></td>
-			<td align="center" ><?php echo $dados['loja'] ?></td>
-			<td align="center" ><?php echo date('d/m/Y h:m:s', strtotime( $dados['datadespacho'])) ?></td>
-			<td align="center">
-			<?php if ( $dados['recebimentoloja'] == 0 ) { ?> 
-				<form method="POST" action="retorno.php">
-				<input type="text" hidden name="id" <?php echo "value='".$dados['id']."'"?> >
-				<p class="alert alert-danger" role="alert">Pendente de entrega</p>
-				</form>
-			<?php } else {
-					echo $dados['datarecebimento'];
-			} ?>
-			</td>
-		</tr>
-	<?php }	?>
-</table>
+	<img src="click-collect.png" width="709px" height="335px" style="background-color: #F8F9FA; border-radius: 25px;">
 </div>
 <?php include 'rodape.php' ?>

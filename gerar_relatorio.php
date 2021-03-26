@@ -22,7 +22,9 @@ session_start();
  $html .= '</tr>';
 
 		//Selecionar todos os itens da tabela 
-		$query = "SELECT * FROM recebimento";
+		$dtinicio = $_POST['datainicio'];
+		$dtfim = $_POST['datafim'];
+		$query = "SELECT * FROM recebimento WHERE DATE(data_recebimento) between '".$dtinicio."' and '".$dtfim."';";
 		$resultado_query = mysqli_query($conexao, $query);
 		
 		while($row_query = mysqli_fetch_assoc($resultado_query)){

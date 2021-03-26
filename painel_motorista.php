@@ -5,11 +5,11 @@
  include 'functions_gaiolas.php';
 ?>
 
- <h1>Entregar Gaiolas</h1>
+ <h1>Entregar Pedidos</h1>
  <br><br>	
 <div class="container">
-		<form action="filtro_motorista.php">
-	<p class="alert alert-primary" role="alert"> SELECIONE A LOJA: 
+		<form action="filtro_motorista.php" method="POST">
+		<p class="alert alert-primary" role="alert"> SELECIONE A LOJA: 
 		<select name="loja" required="yes">
 		<option value="">Selecione a Loja</option>
 		<option value="12">CE 12</option>
@@ -234,7 +234,7 @@
 		<textarea required="yes"name="pedidos_motorista"></textarea>
 			<br><br>
 			</div>
-		<button class="btn btn-primary" type="submit" name="filtrar">PROCURAR GAIOLA</button><br><br>
+		<button class="btn btn-primary" type="submit" name="filtrar">Receber</button><br><br>
 	</form>
 </div>
 <?php include 'rodape.php' ?>

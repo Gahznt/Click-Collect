@@ -14,7 +14,6 @@ function inserirDados($conexao, $pedido, $loja, $now) {
 	}
 	$query = "INSERT INTO despacho SET gaiolas = '".$pedido."', loja = '".$loja."', datadespacho = '".$now."';";
 	return mysqli_query($conexao, $query);
-
 } 
 
 function inserirRecebimentoFast($conexao, $pedido, $newNow) {
@@ -59,7 +58,10 @@ function inserirRecebimento($conexao, $pedidos, $loja) {
 
 } 
 
-function confirmaRecebimento($conexao, $now, $id, $conferente, $matricula) {
-	$query = "UPDATE despacho SET datarecebimento = '".$now."', recebimentoloja = '1', conferente = '".$conferente."', matricula_conferente = '".$matricula."' WHERE id = '".$id."'";
+function confirmaRecebimento($conexao, $value, $loja, $conferente, $matricula, $now) {
+	$query = "INSERT INTO recebimento_loja SET pedido = '".$value."', loja = '".$loja."', conferente = '".$conferente."', matricula = '".$matricula."', data_recebimento = '".$now."';";
 	return mysqli_query($conexao, $query);
 }
+
+
+
