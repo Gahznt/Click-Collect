@@ -4,7 +4,7 @@
  include 'conexao.php';
  include 'functions_gaiolas.php';?>
  
-<h1>Pedidos despachados</h1>
+<h1>Consulta de pedidos despachados</h1>
 <p class="lead alert-primary">
 Consultar pedidos que foram embarcados para as lojas.
 </p>
