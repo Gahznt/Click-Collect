@@ -24,7 +24,7 @@
     <div class="dropdown-menu">
       <a class="dropdown-item" href="lista_recebimento.php">Recebimento FAST</a>
       <a class="dropdown-item" href="lista.php">EMBARQUE loja</a>
-      <a class="dropdown-item" href="#">ENTREGA loja</a>
+      <a class="dropdown-item" href="lista_motorista.php">ENTREGA loja</a>
     </div>
   </div>
 			</li>	

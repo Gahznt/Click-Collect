@@ -17,7 +17,7 @@ $arrayPedido = preg_split('/\s+/', trim($pedido));
 foreach ($arrayPedido as $key => $value) {
 	$sucesso = confirmaRecebimento($conexao, $value, $loja, $conferente, $matricula, $now);
 }
-header("location: painel_motorista.php");
+header("location: sucessomsg_motorista.php");
 
 
 

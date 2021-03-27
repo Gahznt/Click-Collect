@@ -23,9 +23,8 @@
     <div class="dropdown-menu">
       <a class="dropdown-item" href="lista_recebimento.php">Recebimento FAST</a>
       <a class="dropdown-item" href="lista.php">EMBARQUE loja</a>
-      <a class="dropdown-item" href="#">ENTREGA loja</a>
+      <a class="dropdown-item" href="lista_motorista.php">ENTREGA loja</a>
     </div>
-  </div>
 			<li class="nav-item"> <a class="btn text-danger" href="logout.php">Deslogar</a> </li>	
 			<li class="nav-item"> <a class="btn btn-danger" href="painel.php">Retornar ao Painel Click</a> </li>	
 			</ul>
