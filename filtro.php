@@ -8,8 +8,8 @@ $dataloja = $_GET['loja'];
 <div class="container">
 <p>
 <h1>Pedidos despachados</h1>
-<form method="POST" action="gerar_relatorio_completo.php">
-<input type="text" value="<?php echo $dataloja?>" hidden><br>
+<form action="gerar_relatorio_completo.php" method="POST">
+<input type="text" name="loja"value="<?php echo $dataloja?>" hidden><br>
 <input class="btn btn-success" type="submit" value="Extrair Relatorio">
 </form>
 </p>

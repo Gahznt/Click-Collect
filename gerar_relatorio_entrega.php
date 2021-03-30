@@ -11,6 +11,7 @@ session_start();
  <?php 
  $arquivo = 'Relatório_Entreg_Loja.xls';
  $html = "";
+
  $html .= "<table border = '1'>";
 
  $html .= '<tr>';

@@ -4,11 +4,11 @@ include 'conexao.php' ?>
 <?php
 
 function inserirDados($conexao, $pedido, $loja, $now) {
-	$querySelect = "SELECT * FROM despacho WHERE gaiolas = '".$pedido.	"' AND recebimentoloja = 0";
+	$querySelect = "SELECT * FROM despacho WHERE gaiolas = '".$pedido.	"' AND recebimentoCT = 0";
 	$resultadoConexaoSelect = mysqli_query($conexao, $querySelect);
 	$resultadoSelect = mysqli_fetch_assoc($resultadoConexaoSelect);
 	if (!is_null($resultadoSelect)) {
-		$query = "UPDATE despacho SET datarecebimento = '".$now."', recebimentoloja = '1' WHERE id ='".
+		$query = "UPDATE despacho SET datarecebimento = '".$now."', recebimentoCT = '1' WHERE id ='".
 		$resultadoSelect['id']."'";
 		mysqli_query($conexao, $query);
 	}

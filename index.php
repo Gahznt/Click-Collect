@@ -1,26 +1,64 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<?php session_start(); ?>
 <html>
-<?php include 'cabecalho.php';
-session_start();
-?>
+<head>
+	<title>.: VBLOG CLICK :.</title>
+   <!--Made with love by Mutiullah Samim -->
+   
+	<!--Bootsrap 4 CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!--Fontawesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-
-<h1>Login</h1>
-<br>	
-<body background="background_all.png" style=" background-image: background_all.png; background-repeat: no-repeat; background-size: 100%">
-	<form action="login.php" method="POST">	
-		<?php if (isset($_SESSION['nao_autenticado'])): ?>
-		<p class="alert alert-danger" role="alert">USUÁRIO OU SENHA INVÁLIDOS!!!</p>
+	<!--Custom styles-->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3 align="center">Entrar</h3>
+			</div>
+			<div class="card-body">
+				<form action="login.php" method="POST">
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<input type="text" class="form-control" name="user" placeholder="Usuário">
+						
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<input type="password" class="form-control" name="pass" placeholder="Senha">
+					</div>
+					<div class="row align-items-center remember">
+						<input type="checkbox">Lembre-me
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Acessar" class="btn float-right login_btn">
+					</div>
+				</form>
+			</div>
+			<div class="card-footer">
+				<div class="d-flex justify-content-center links">
+					Não é cadastrado?? <a href="#">Solicite já.</a>
+				</div>
+				<?php if (isset($_SESSION['nao_autenticado'])): ?>
+		<p class="alert alert-danger" align="center" role="alert">Usuário ou senha inválidos.</p>
 		<?php endif ?>
-		<label>
-		<b>Usuário:</b>
-		<input type="user" name="user" class="form-control" required="yes" autofocus="yes" >
-		<b>Senha:</b>
-		<input type="password" name="pass" class="form-control" required="yes">
-		</label>
-		<br>
-		<br>
-		<button type="submit" class="btn btn-primary">Acessar</button>
-		<br>
-	</form>
-<?php include 'rodape.php'?>
+			</div>
+		</div>
+		
+	</div>
+</div>
+</body>
 </html>

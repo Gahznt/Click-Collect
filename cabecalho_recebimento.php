@@ -16,15 +16,6 @@
 		<div class="navbar nav">
 			<ul class="navbar-nav me-auto mb-2 mb-md-0" >
 			<li class="nav-item"> <a class="btn" href="painel_recebimento.php">Painel de recebimento</a></li>
-			<div class="dropdown">
-    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-      Consultas
-    </button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="lista_recebimento.php">Recebimento FAST</a>
-      <a class="dropdown-item" href="lista.php">EMBARQUE loja</a>
-      <a class="dropdown-item" href="lista_motorista.php">ENTREGA loja</a>
-    </div>
 			<li class="nav-item"> <a class="btn text-danger" href="logout.php">Deslogar</a> </li>	
 			<li class="nav-item"> <a class="btn btn-danger" href="painel.php">Retornar ao Painel Click</a> </li>	
 			</ul>
