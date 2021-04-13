@@ -59,7 +59,7 @@ function inserirRecebimento($conexao, $pedidos, $loja) {
 } 
 
 function confirmaRecebimento($conexao, $value, $loja, $conferente, $matricula, $now) {
-	$query = "INSERT INTO recebimento_loja SET pedido = '".$value."', loja = '".$loja."', conferente = '".$conferente."', matricula = '".$matricula."', data_recebimento = '".$now."';";
+	$query = "INSERT INTO recebimento_loja SET pedido = '".$value."', loja_entrega = '".$loja."', conferente = '".$conferente."', matricula = '".$matricula."', data_recebimento = '".$now."';";
 	return mysqli_query($conexao, $query);
 }
 

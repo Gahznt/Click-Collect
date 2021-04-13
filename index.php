@@ -23,7 +23,7 @@
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
 			<div class="card-header">
-				<h3 align="center">Entrar</h3>
+				<h3 align="center">🔒 Entrar</h3>
 			</div>
 			<div class="card-body">
 				<form action="login.php" method="POST">

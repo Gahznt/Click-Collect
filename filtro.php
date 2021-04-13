@@ -3,7 +3,7 @@ include 'verifica_login.php';
 include 'cabecalhosite.php';
 include 'functions_gaiolas.php';
 include 'conexao.php';
-$dataloja = $_GET['loja'];
+$dataloja = $_POST['loja'];
 ?>
 <div class="container">
 <p>

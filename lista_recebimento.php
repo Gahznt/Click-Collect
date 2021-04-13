@@ -1,6 +1,6 @@
 <?php 
- include 'verifica_login.php';
- include 'cabecalho_recebimento.php';
+ //include 'verifica_login.php';
+ include 'cabecalhosite.php';
  include 'conexao.php';
  include 'functions_gaiolas.php';?>
  

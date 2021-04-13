@@ -1,17 +1,26 @@
 <?php 
- include 'verifica_login.php';
+ //include 'verifica_login.php';
  include 'cabecalhosite.php';
  include 'conexao.php';
  include 'functions_gaiolas.php';?>
  
-<h1>Pedidos Despachados</h1>
+<h1>Extrair Relatório</h1>
 <p class="lead alert-primary">
-Consultar pedidos que foram embarcados para as lojas.
+Extrair relatorio CLICK.
 </p>
+<h3>Selecione o período e destino:</h3>
 <div class="container">
-	<form action="filtro.php">
-	<br><p>Filtrar loja: <select name="loja" required="yes">
-	<option value="12">CE 12</option>
+<p>
+	<form action="gerar_relatorio_completo.php" method="POST">
+		<label>Data inicio:</label>
+		<input type="date" name="datainicio" required>
+		<label>Data fim:</label>
+		<input type="date" name="datafim" required>
+		<label>Loja:</label>
+		<td> <select name="loja">
+		<option value="">Selecione a loja</option>
+		<option class="alert-danger" value="*">Tudo</option>
+		<option value="12">CE 12</option>
 		<option value="20">CE 20</option>
 		<option value="23">CE 23</option>
 		<option value="24">CE 24</option>
@@ -225,10 +234,10 @@ Consultar pedidos que foram embarcados para as lojas.
 		<option value="CT SC">CT-Itajai</option>
 		<option value="CT PB">CT-Joao Pessoa</option>
 		</select>
-		<input class="btn-primary" type="submit" name="filtrar" value="Filtrar">
-		<br><br>
+		<br>
+		<br>
+		<input class="btn btn-success" type="submit" value="Extrair">
 		</p>
 	</form>
-	<img src="click-collect.png" width="709px" height="335px" style="background-color: #F8F9FA; border-radius: 25px;">
-</div>
+	
 <?php include 'rodape.php' ?>

@@ -22,9 +22,8 @@
       Consultas
     </button>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="lista_recebimento.php">Recebimento FAST</a>
-      <a class="dropdown-item" href="lista.php">EMBARQUE loja</a>
-      <a class="dropdown-item" href="lista_motorista.php">ENTREGA loja</a>
+      <a class="dropdown-item" href="lista_recebimento.php">Relatorio recebimento FAST</a>
+      <a class="dropdown-item" href="lista.php">Relatorio Click</a>
     </div>
   </div>
 			</li>	
