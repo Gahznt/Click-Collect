@@ -4,10 +4,8 @@
  include 'conexao.php';
  include 'functions_gaiolas.php';?>
  
-<h1>Extrair Relatório</h1>
-<p class="lead alert-primary">
-Extrair relatorio CLICK.
-</p>
+<h1>Extrair Relatório Click-Collect</h1>
+<hr class="my-4">
 <h3>Selecione o período e destino:</h3>
 <div class="container">
 <p>
@@ -19,7 +17,7 @@ Extrair relatorio CLICK.
 		<label>Loja:</label>
 		<td> <select name="loja">
 		<option value="">Selecione a loja</option>
-		<option class="alert-danger" value="*">Tudo</option>
+		<option class="alert-danger" value="todos">Tudo</option>
 		<option value="12">CE 12</option>
 		<option value="20">CE 20</option>
 		<option value="23">CE 23</option>
@@ -230,14 +228,14 @@ Extrair relatorio CLICK.
 		<option value="270">CE 270</option>
 		<option value="273">CE 273</option>
 		<option value="274">CE 274</option>
-		<option value="CT RIO">CT-RIO</option>
-		<option value="CT SC">CT-Itajai</option>
-		<option value="CT PB">CT-Joao Pessoa</option>
+		<option value="CT RIO">CT RIO</option>
+		<option value="CT SC">CT Itajai</option>
+		<option value="CT PB">CT Joao Pessoa</option>
 		</select>
 		<br>
-		<br>
-		<input class="btn btn-success" type="submit" value="Extrair">
+		<input class="btn btn-success" type="submit" value="Extrair Relatório">
 		</p>
 	</form>
-	
+	<img src="click-collect.png" width="709px" height="335px" style="background-color: #F8F9FA; border-radius: 25px;">
+
 <?php include 'rodape.php' ?>

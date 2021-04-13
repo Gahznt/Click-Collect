@@ -11,7 +11,7 @@
 		<a  class="navbar-brand" href="painel_motorista.php"><img src="logo_vblog.png" width="250" height="55"></a>
 		<div class="navbar nav">
 			<ul class="navbar-nav me-auto mb-2 mb-md-0" >
-			<li class="nav-item"> <a class="btn" href="painel_motorista.php">Entrega de Pedidos CLICK</a></li>
+			<li class="nav-item"> <a class="btn" href="painel_motorista.php">Entrega de pedidos</a></li>
 			<li class="nav-item"> <a class=" btn text-danger" href="logout.php">Deslogar</a> </li>	
 			</ul>
 		</div>

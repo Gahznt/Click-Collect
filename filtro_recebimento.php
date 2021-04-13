@@ -1,5 +1,5 @@
 <?php
-include 'verifica_login.php';
+//include 'verifica_login.php';
 include 'cabecalho_recebimento.php';
 include 'functions_gaiolas.php';
 include 'conexao.php';
@@ -7,6 +7,8 @@ $dtinicio = $_POST['datainicio'];
 $dtfim = $_POST['datafim'];
 ?>
 <div class="container">
+<h1>Resultado da busca</h1>
+<hr class="my-4">
 <form action = "gerar_relatorio.php" method="POST">
 <input type="text" name="datainicio" hidden value="<?php echo $dtinicio?>">
 <input type="date" name="datafim" hidden value="<?php echo $dtfim?>">

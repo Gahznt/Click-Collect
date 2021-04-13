@@ -6,6 +6,7 @@ include 'cabecalhosite.php';
 </head>
 <form action="inf_despacho.php">
 	<h1>Despacho Click-Collect</h1>
+	<hr class="my-4">
 	<p class="alert alert-warning" role="alert">Loja:
 		<td> <select name="loja" required = "yes">
 		<option value="">Selecione a loja</option>
@@ -226,11 +227,11 @@ include 'cabecalhosite.php';
 		</p>
 		<label>Pedidos:</label>
 		<p>
-		<textarea name="pedidos" required="yes"></textarea>
+		<textarea name="pedidos" required="yes" rows="10"></textarea>
 		</p>
 		<input class="btn btn-outline-success" type="submit" name="Cadastrar">
 </form>
-<img src="click-collect.png" width="709px" height="335px" style="background-color: #F8F9FA; border-radius: 25px;">
+	<img src="click-collect.png" width="709px" height="335px" style="background-color: #F8F9FA; border-radius: 25px;">
 	</div>
 </html>
 <?php include 'rodape.php' ?>
